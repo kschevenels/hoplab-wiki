@@ -6,7 +6,11 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
+        <meta name="description" content="Hoplab Wiki – onboarding, research methods, procedures, and resources for members of the Hoplab and related teams.">
       
+      
+      
+        <link rel="canonical" href="https://hoplab-lbp.github.io/hoplab-wiki/research/behaviour/experimental-setup/pavlovia-psychopy.html">
       
       
         <link rel="prev" href="pavlovia-jspsych.html">
@@ -15,8 +19,11 @@
         <link rel="next" href="bh-onsite.html">
       
       
+        
+      
+      
       <link rel="icon" href="../../../assets/hoplab_favicon_white.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.21">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
     
     
       
@@ -24,10 +31,10 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.2a3383ac.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -35,15 +42,15 @@
     
     
       
-        <script src="https://unpkg.com/iframe-worker/shim"></script>
+        <script src="../../../assets/external/unpkg.com/iframe-worker/shim.js"></script>
       
     
     
       
         
         
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        
+        <link rel="stylesheet" href="../../../assets/external/fonts.googleapis.com/css.49ea35f2.css">
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
@@ -64,7 +71,6 @@
     <script>if("undefined"!=typeof __md_analytics){var consent=__md_get("__consent");consent&&consent.analytics&&__md_analytics()}</script>
   
 
-    
     
     
   </head>
@@ -178,11 +184,18 @@
       </label>
       <nav class="md-search__options" aria-label="Search">
         
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
         </button>
       </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
       
     </form>
     <div class="md-search__output">
@@ -204,7 +217,7 @@
         <a href="https://github.com/HOPLAB-LBP/hoplab-wiki/" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
   </div>
   <div class="md-source__repository">
     HOPLAB-LBP/hoplab-wiki
@@ -363,7 +376,7 @@
       <a href="https://github.com/HOPLAB-LBP/hoplab-wiki/" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
   </div>
   <div class="md-source__repository">
     HOPLAB-LBP/hoplab-wiki
@@ -385,9 +398,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Home
+  
+
     
   </span>
+  
   
 
       </a>
@@ -442,9 +460,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Getting started
+  
+
     
   </span>
+  
   
 
             </a>
@@ -459,7 +482,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
-            Getting started
+            
+  
+    Getting started
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -477,9 +504,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Useful links
+  
+
     
   </span>
+  
   
 
       </a>
@@ -500,9 +532,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Mailing lists
+  
+
     
   </span>
+  
   
 
       </a>
@@ -523,9 +560,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Practical set-up
+  
+
     
   </span>
+  
   
 
       </a>
@@ -546,9 +588,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Computer set-up
+  
+
     
   </span>
+  
   
 
       </a>
@@ -569,9 +616,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Administrative procedures
+  
+
     
   </span>
+  
   
 
       </a>
@@ -592,9 +644,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Student starter pack
+  
+
     
   </span>
+  
   
 
       </a>
@@ -635,8 +692,6 @@
       
         
       
-        
-      
     
     
     
@@ -662,9 +717,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Research
+  
+
     
   </span>
+  
   
 
             </a>
@@ -679,7 +739,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
-            Research
+            
+  
+    Research
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -727,9 +791,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Ethical approval
+  
+
     
   </span>
+  
   
 
             </a>
@@ -744,7 +813,11 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_2">
             <span class="md-nav__icon md-icon"></span>
-            Ethical approval
+            
+  
+    Ethical approval
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -762,9 +835,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     EC onderzoek
+  
+
     
   </span>
+  
   
 
       </a>
@@ -785,9 +863,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     SMEC
+  
+
     
   </span>
+  
   
 
       </a>
@@ -842,9 +925,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Coding practices
+  
+
     
   </span>
+  
   
 
             </a>
@@ -854,7 +942,11 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_3">
             <span class="md-nav__icon md-icon"></span>
-            Coding practices
+            
+  
+    Coding practices
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -914,9 +1006,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Behaviour
+  
+
     
   </span>
+  
   
 
             </a>
@@ -931,7 +1028,11 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_4">
             <span class="md-nav__icon md-icon"></span>
-            Behaviour
+            
+  
+    Behaviour
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -949,9 +1050,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Find participants
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1003,9 +1109,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Set up your experiment
+  
+
     
   </span>
+  
   
 
             </a>
@@ -1020,7 +1131,11 @@
         <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_4_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_4_3">
             <span class="md-nav__icon md-icon"></span>
-            Set up your experiment
+            
+  
+    Set up your experiment
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1038,9 +1153,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Online Experiments (jsPsych)
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1070,9 +1190,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Online Experiments (PsychoPy)
+  
+
     
   </span>
+  
   
 
           <span class="md-nav__icon md-icon"></span>
@@ -1083,9 +1208,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Online Experiments (PsychoPy)
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1106,9 +1236,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#installing-psychopy-builder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Installing Psychopy Builder
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#uploading-to-pavlovia" class="md-nav__link">
     <span class="md-ellipsis">
-      Uploading to Pavlovia
+      
+        Uploading to Pavlovia
+      
     </span>
   </a>
   
@@ -1117,7 +1260,9 @@
         <li class="md-nav__item">
   <a href="#avoiding-errors-in-pavlovia" class="md-nav__link">
     <span class="md-ellipsis">
-      Avoiding Errors in Pavlovia
+      
+        Avoiding Errors in Pavlovia
+      
     </span>
   </a>
   
@@ -1126,7 +1271,9 @@
         <li class="md-nav__item">
   <a href="#using-movie-stimuli" class="md-nav__link">
     <span class="md-ellipsis">
-      Using movie stimuli
+      
+        Using movie stimuli
+      
     </span>
   </a>
   
@@ -1135,7 +1282,9 @@
         <li class="md-nav__item">
   <a href="#rest-trials" class="md-nav__link">
     <span class="md-ellipsis">
-      Rest trials
+      
+        Rest trials
+      
     </span>
   </a>
   
@@ -1144,7 +1293,9 @@
         <li class="md-nav__item">
   <a href="#text-stimuli" class="md-nav__link">
     <span class="md-ellipsis">
-      Text stimuli
+      
+        Text stimuli
+      
     </span>
   </a>
   
@@ -1153,7 +1304,9 @@
         <li class="md-nav__item">
   <a href="#informed-consent" class="md-nav__link">
     <span class="md-ellipsis">
-      Informed consent
+      
+        Informed consent
+      
     </span>
   </a>
   
@@ -1162,7 +1315,9 @@
         <li class="md-nav__item">
   <a href="#images" class="md-nav__link">
     <span class="md-ellipsis">
-      Images
+      
+        Images
+      
     </span>
   </a>
   
@@ -1171,7 +1326,9 @@
         <li class="md-nav__item">
   <a href="#language-selection-and-conditional-loops" class="md-nav__link">
     <span class="md-ellipsis">
-      Language selection and conditional loops
+      
+        Language selection and conditional loops
+      
     </span>
   </a>
   
@@ -1180,7 +1337,9 @@
         <li class="md-nav__item">
   <a href="#cellphone-detection" class="md-nav__link">
     <span class="md-ellipsis">
-      Cellphone detection
+      
+        Cellphone detection
+      
     </span>
   </a>
   
@@ -1207,9 +1366,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     On-site Experiments
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1238,9 +1402,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Behavioural tasks
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1305,9 +1474,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     fMRI
+  
+
     
   </span>
+  
   
 
             </a>
@@ -1322,7 +1496,11 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_5">
             <span class="md-nav__icon md-icon"></span>
-            fMRI
+            
+  
+    fMRI
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1340,9 +1518,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     First steps
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1363,9 +1546,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Scanning procedure and info
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1427,9 +1615,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Analysis workflow
+  
+
     
   </span>
+  
   
 
             </a>
@@ -1444,7 +1637,11 @@
         <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_5_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_5_4">
             <span class="md-nav__icon md-icon"></span>
-            Analysis workflow
+            
+  
+    Analysis workflow
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1462,9 +1659,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     0. General information
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1485,9 +1687,14 @@
   
   
   <span class="md-ellipsis">
-    1. Set-up you environment
+    
+  
+    1. Set up your environment
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1508,9 +1715,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     2. BIDS conversion
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1531,9 +1743,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     3. Pre-processing and QA
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1554,9 +1771,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     4a. First-level analysis - GUI
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1577,9 +1799,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     4b. First-level analysis - Scripting
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1600,9 +1827,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     5. Regions of interest
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1623,9 +1855,14 @@
   
   
   <span class="md-ellipsis">
-    6. Multi-variate analysis
+    
+  
+    6. Multivariate analysis
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1646,9 +1883,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     fMRI workflow example
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1677,9 +1919,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Meta-analysis with NiMARE
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1700,9 +1947,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     fMRIprep on HPC
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1730,6 +1982,10 @@
       
         
           
+        
+      
+        
+      
         
       
         
@@ -1759,9 +2015,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     EEG
+  
+
     
   </span>
+  
   
 
             </a>
@@ -1776,7 +2037,11 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_6">
             <span class="md-nav__icon md-icon"></span>
-            EEG
+            
+  
+    EEG
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1794,20 +2059,17 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Data acquisition
+  
+
     
   </span>
   
-
-      </a>
-    </li>
   
 
-              
-            
-          </ul>
-        </nav>
-      
+      </a>
     </li>
   
 
@@ -1819,54 +2081,54 @@
   
   
   
-    
-    
-      
+    <li class="md-nav__item">
+      <a href="../../eeg/eeg-task.html" class="md-nav__link">
         
-          
-        
-      
-    
-    
-    
-      
-      
-        
-          
-          
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7" >
-        
-          
-          <div class="md-nav__link md-nav__container">
-            <a href="../../dnn/index.html" class="md-nav__link ">
-              
   
   
   <span class="md-ellipsis">
-    Neural Networks
+    
+  
+    Creating EEG tasks
+  
+
     
   </span>
   
+  
 
-            </a>
+      </a>
+    </li>
+  
+
+              
             
-          </div>
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../eeg/eeg-analysis.html" class="md-nav__link">
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_7_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_7">
-            <span class="md-nav__icon md-icon"></span>
-            Neural Networks
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    EEG data analysis
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
               
             
           </ul>
@@ -1896,9 +2158,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Science outreach
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1918,9 +2185,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Contribute
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1955,9 +2227,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#installing-psychopy-builder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Installing Psychopy Builder
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#uploading-to-pavlovia" class="md-nav__link">
     <span class="md-ellipsis">
-      Uploading to Pavlovia
+      
+        Uploading to Pavlovia
+      
     </span>
   </a>
   
@@ -1966,7 +2251,9 @@
         <li class="md-nav__item">
   <a href="#avoiding-errors-in-pavlovia" class="md-nav__link">
     <span class="md-ellipsis">
-      Avoiding Errors in Pavlovia
+      
+        Avoiding Errors in Pavlovia
+      
     </span>
   </a>
   
@@ -1975,7 +2262,9 @@
         <li class="md-nav__item">
   <a href="#using-movie-stimuli" class="md-nav__link">
     <span class="md-ellipsis">
-      Using movie stimuli
+      
+        Using movie stimuli
+      
     </span>
   </a>
   
@@ -1984,7 +2273,9 @@
         <li class="md-nav__item">
   <a href="#rest-trials" class="md-nav__link">
     <span class="md-ellipsis">
-      Rest trials
+      
+        Rest trials
+      
     </span>
   </a>
   
@@ -1993,7 +2284,9 @@
         <li class="md-nav__item">
   <a href="#text-stimuli" class="md-nav__link">
     <span class="md-ellipsis">
-      Text stimuli
+      
+        Text stimuli
+      
     </span>
   </a>
   
@@ -2002,7 +2295,9 @@
         <li class="md-nav__item">
   <a href="#informed-consent" class="md-nav__link">
     <span class="md-ellipsis">
-      Informed consent
+      
+        Informed consent
+      
     </span>
   </a>
   
@@ -2011,7 +2306,9 @@
         <li class="md-nav__item">
   <a href="#images" class="md-nav__link">
     <span class="md-ellipsis">
-      Images
+      
+        Images
+      
     </span>
   </a>
   
@@ -2020,7 +2317,9 @@
         <li class="md-nav__item">
   <a href="#language-selection-and-conditional-loops" class="md-nav__link">
     <span class="md-ellipsis">
-      Language selection and conditional loops
+      
+        Language selection and conditional loops
+      
     </span>
   </a>
   
@@ -2029,7 +2328,9 @@
         <li class="md-nav__item">
   <a href="#cellphone-detection" class="md-nav__link">
     <span class="md-ellipsis">
-      Cellphone detection
+      
+        Cellphone detection
+      
     </span>
   </a>
   
@@ -2045,6 +2346,7 @@
           
           
             <div class="md-content" data-md-component="content">
+              
               <article class="md-content__inner md-typeset">
                 
                   
@@ -2061,19 +2363,25 @@
 
 <h1 id="online-experiments-with-psychopy">Online experiments with Psychopy<a class="headerlink" href="#online-experiments-with-psychopy" title="Permanent link">&para;</a></h1>
 <p>This page guides you through setting up, managing, and troubleshooting experiments on Pavlovia using the <strong>Psychopy Builder</strong>. Follow these steps and best practices to streamline your experiment creation and minimize errors.</p>
+<p>For more information on this Christophe Bossens also organizes a <a href="https://ppw.kuleuven.be/agenda/2026/psychopy">Workshop on PsychoPy Builder</a> once a year. </p>
+<hr />
+<h2 id="installing-psychopy-builder">Installing Psychopy Builder<a class="headerlink" href="#installing-psychopy-builder" title="Permanent link">&para;</a></h2>
+<p>To design a <a href="https://www.psychopy.org/">Psychopy</a> task in the Psychopy Builder the first step will be to install the (free) Psychopy Desktop application. Installation instructions can be found <a href="https://www.psychopy.org/download.html">here</a>. 
+After installation you will automatically have three psychopy applications/interfaces: the <a href="https://www.psychopy.org/builder/">Builder</a>, the Coder and the Runner. Here we will mostly work in the Builder, however you can test the experiment offline using eg the Runner interface. </p>
+<p>Also check the <a href="https://www.psychopy.org/builder/">Psychopy Builder</a> website by psychopy.org for an expelenation on how to build an experiment in the Builder GUI and all available components! </p>
 <hr />
 <h2 id="uploading-to-pavlovia">Uploading to Pavlovia<a class="headerlink" href="#uploading-to-pavlovia" title="Permanent link">&para;</a></h2>
 <p>Follow the steps below to successfully upload your experiment to Pavlovia.</p>
 <ol>
 <li>Create the experiment in <strong>Psychopy Builder</strong>.</li>
-<li>Create a <strong>Pavlovia account</strong> and log in.</li>
-<li>Link your account to the Builder via this button <img alt="" src="../../../assets/bh-pavlovia-builder-button.png" /></li>
+<li>Create a <a href="https://gitlab.pavlovia.org/users/sign_in"><strong>Pavlovia account</strong></a> and log in.</li>
+<li>Link your account to the Builder via this button <img alt="Pavlovia login button in PsychoPy Builder" src="../../../assets/bh-pavlovia-builder-button.png" /></li>
 <li>Place all files for the experiment in a <strong>single directory</strong>.</li>
-<li>Click the <strong>Syncing Globe</strong> <img alt="" src="../../../assets/bh-pavlovia-sync-button.png" /> in the Builder, enter a project name, and upload. The icon will turn green when the upload is complete.</li>
+<li>Click the <strong>Syncing Globe</strong> <img alt="Pavlovia sync globe button in PsychoPy Builder" src="../../../assets/bh-pavlovia-sync-button.png" /> in the Builder, enter a project name, and upload. The icon will turn green when the upload is complete.</li>
 <li>Access your experiment on Pavlovia by navigating to <strong>Dashboard &gt; Experiments</strong> in your account.</li>
 <li>To test the project, change the status to <strong>piloting</strong> and click <strong>pilot</strong>.</li>
 </ol>
-<p><img alt="" src="../../../assets/bh-psychopy-builder1.png" /></p>
+<p><img alt="PsychoPy Builder main window screenshot" src="../../../assets/bh-psychopy-builder1.png" /></p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>If the experiment doesn’t run, click <strong>view code</strong>. If the repository is empty, retry the sync from the Builder.</p>
@@ -2118,7 +2426,7 @@
 <ul>
 <li><strong>Stopping Nested Loops</strong>: <code>trials.finished</code> only stops the inner loop. To stop an outer loop (e.g., <code>PreparationBlock</code>), you may need a different solution, as stopping nested loops is limited in Pavlovia.</li>
 </ul>
-<p><img alt="" src="../../../assets/bh-pavlovia2.png" /></p>
+<p><img alt="Pavlovia dashboard screenshot" src="../../../assets/bh-pavlovia2.png" /></p>
 <h4 id="define-common-commands-at-the-start-of-the-experiment">Define common commands at the start of the experiment<a class="headerlink" href="#define-common-commands-at-the-start-of-the-experiment" title="Permanent link">&para;</a></h4>
 <p>For Python commands that do not exist in JavaScript, define them at the beginning of the experiment in a JS-only code chunk to simplify translation. Note that some of these commands may still need manual translation per code chunk.</p>
 <p>Some manual definitions:</p>
@@ -2199,18 +2507,15 @@ This will center the text online; however, offline functionality may be impacted
 <li>Store the chosen key in a variable.</li>
 <li>Add a code component, set <code>nReps</code> to a variable based on the selection, and configure the loop accordingly.</li>
 </ul>
-<p><img alt="" src="../../../assets/bh-pavlovia5.png" />
-<img alt="" src="../../../assets/bh-pavlovia6.png" />
-<img alt="" src="../../../assets/bh-pavlovia7.png" /></p>
+<p><img alt="Pavlovia configuration screenshot 1" src="../../../assets/bh-pavlovia5.png" />
+<img alt="Pavlovia configuration screenshot 2" src="../../../assets/bh-pavlovia6.png" />
+<img alt="Pavlovia configuration screenshot 3" src="../../../assets/bh-pavlovia7.png" /></p>
 <h2 id="cellphone-detection">Cellphone detection<a class="headerlink" href="#cellphone-detection" title="Permanent link">&para;</a></h2>
 <p>To prevent participants from accessing the experiment on mobile devices, use this <strong>JS-only</strong> code snippet at the start of the experiment:</p>
 <div class="language-javascript highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="sr">/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i</span><span class="p">.</span><span class="nx">test</span><span class="p">(</span><span class="nx">navigator</span><span class="p">.</span><span class="nx">userAgent</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">    </span><span class="nx">quitPsychoJS</span><span class="p">(</span><span class="s1">&#39;Mobile device detected. Goodbye!&#39;</span><span class="p">,</span><span class="w"> </span><span class="kc">false</span><span class="p">);</span>
 </span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="p">}</span>
 </span></code></pre></div>
-<p><strong>TODO</strong>: [Klara] Refer to the workshop material in the series on online experimentation given by Christophe Bossens (Klara has access and can probably put them on Teams somewhere)
-<strong>TODO</strong>: [Klara] Fix broken link in Informed Consent section
-<strong>TODO</strong>: [Klara] Structure this page a bit better? It seems a bit "here and there" to me </p>
 
 
 
@@ -2231,7 +2536,7 @@ This will center the text online; however, offline functionality may be impacted
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="October 8, 2025 16:58:55 CEST">October 8, 2025 16:58:55</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="November 19, 2025 14:57:41 CET">November 19, 2025 14:57:41</span>
   </span>
 
     
@@ -2247,6 +2552,7 @@ This will center the text online; however, offline functionality may be impacted
     </span>
     <nav>
       
+        <a href="mailto:95569841+emilyvh10@users.noreply.github.com">EmilyVH10</a>, 
         <a href="mailto:61991543+timmaniquet@users.noreply.github.com">Tim Maniquet</a>, 
         <a href="mailto:59078281+costantinoai@users.noreply.github.com">costantinoai</a>, 
         <a href="mailto:110229499+kschevenels@users.noreply.github.com">kschevenels</a>
@@ -2478,10 +2784,11 @@ This will center the text online; however, offline functionality may be impacted
     
     
       
-      <script id="__config" type="application/json">{"base": "../../..", "features": ["content.tabs.link", "content.code.copy", "content.code.select", "content.action.edit", "navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.sections", "search.highlight", "navigation.indexes", "navigation.footer"], "search": "../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["content.tabs.link", "content.code.copy", "content.code.select", "content.action.edit", "navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.sections", "search.highlight", "search.suggest", "search.share", "navigation.indexes", "navigation.footer"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>
