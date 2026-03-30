@@ -982,21 +982,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#data-preprocessing" class="md-nav__link">
+  <a href="#data-preprocessing-analysis" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Data preprocessing
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#data-analysis" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Data analysis
+        Data preprocessing &amp; analysis
       
     </span>
   </a>
@@ -2566,21 +2555,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#data-preprocessing" class="md-nav__link">
+  <a href="#data-preprocessing-analysis" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Data preprocessing
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#data-analysis" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Data analysis
+        Data preprocessing &amp; analysis
       
     </span>
   </a>
@@ -2645,6 +2623,10 @@
 <li>Encrypt the <code>confidential/</code> folder (<a href="https://admin.kuleuven.be/icts/english/research/datamgmtpract/ape/encryption">how to encrypt</a>)</li>
 <li>Add a <code>README</code> in the root (see guidelines <a href="offboarding.html#non-research-project-files">here</a>)</li>
 </ul>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Encryption keys can be stored in <a href="https://admin.kuleuven.be/icts/services/passwordstate">Passwordstate</a>, with the keys shared with the appropriate persons within the group.</p>
+</div>
 <h3 id="3-set-up-your-experiment">3. Set up your experiment<a class="headerlink" href="#3-set-up-your-experiment" title="Permanent link">&para;</a></h3>
 <p>Follow the relevant instructions:</p>
 <ul>
@@ -2653,7 +2635,8 @@
 <li>EEG: <a href="../eeg/eeg-task.html">task preparation instructions</a></li>
 </ul>
 <h3 id="4-data-acquisition">4. Data acquisition<a class="headerlink" href="#4-data-acquisition" title="Permanent link">&para;</a></h3>
-<p>If applicable, <strong>get acquainted with specific testing procedures</strong> (<a href="../eeg/eeg-acquisition.html">EEG</a>/<a href="../fmri/fmri-procedure.html">fMRI</a>) and start collecting your data. For behavioural experiments, this can either be using one of the specified online platforms (Pavlovia, Meadows, Prolific, Microsoft Forms), directly from your PC or using paper questionnaires. </p>
+<p>If applicable, <strong>get acquainted with specific testing procedures</strong> (<a href="../eeg/eeg-acquisition.html">EEG</a>/<a href="../fmri/fmri-procedure.html">fMRI</a>) and start collecting your data. </p>
+<p>For behavioural experiments, this can either be using one of the specified online platforms (Pavlovia, Meadows, Prolific, Microsoft Forms), directly from your PC or using paper questionnaires. </p>
 <h3 id="5-store-raw-data">5. Store raw data<a class="headerlink" href="#5-store-raw-data" title="Permanent link">&para;</a></h3>
 <ol>
 <li>
@@ -2667,12 +2650,15 @@
 </li>
 </ol>
 <h3 id="6-store-signed-consent-forms">6. Store signed consent forms<a class="headerlink" href="#6-store-signed-consent-forms" title="Permanent link">&para;</a></h3>
-<p>Store <strong>physically signed ICFs</strong> properly in the designated secure location (i.e., a locked cupboard in your office). They must be stored for a retention period of at least 10 years (SMEC) or 25 years (EC). At the end of your study, you can bring them to the lab's physical data archive (ask <a href="https://www.kuleuven.be/wieiswie/nl/person/00116743">Klara</a> in case you don't know where that is). </p>
+<p>Store <strong>physically signed ICFs</strong> properly in the designated secure location (i.e., a locked cupboard in your office). They must be stored for a retention period of at least 10 years (SMEC) or 25 years (EC). </p>
+<p>At the end of your study, you can bring them to the lab's physical data archive (ask <a href="https://www.kuleuven.be/wieiswie/nl/person/00116743">Klara</a> in case you don't know where that is). </p>
 <h3 id="7-confidential-data">7. Confidential data<a class="headerlink" href="#7-confidential-data" title="Permanent link">&para;</a></h3>
-<p><strong>Confidential personal data</strong> that is requested in the context of participant payment, communication of study results or at-home testing (name, phone number, email address, home address and/or bank account details) should be stored in the <code>confidential</code> folder on your Sharepoint. </p>
-<div class="language-text highlight"><pre><span></span><code>!!! warning &quot;Important&quot;
-    These are not part of the research data and need to be stored separately and encrypted to avoid reidentification of the participants ([how to encrypt](https://admin.kuleuven.be/icts/english/research/datamgmtpract/ape/encryption)). These data are to be deleted once they are no longer relevant (e.g., when the study is closed), unless participants explicitly agreed to store them longer for a specific purpose (discuss this with your PI before actually deleting them).
-</code></pre></div>
+<p><strong>Confidential personal data</strong> that is requested in the context of participant payment, communication of study results or at-home testing (name, phone number, email address, home address and/or bank account details) should be stored in the <code>confidential/</code> folder on your Sharepoint. </p>
+<div class="admonition warning">
+<p class="admonition-title">Important</p>
+<p>These are not part of the research data and need to be stored separately and encrypted to avoid reidentification of the participants (<a href="https://admin.kuleuven.be/icts/english/research/datamgmtpract/ape/encryption">how to encrypt</a>).</p>
+<p>These data should be deleted once they are no longer relevant (e.g., when the study is closed), unless participants explicitly agreed to store them longer for a specific purpose (discuss this with your PI before deleting them).</p>
+</div>
 <h2 id="data-organisation">Data organisation<a class="headerlink" href="#data-organisation" title="Permanent link">&para;</a></h2>
 <h3 id="1-convert-to-bids">1. Convert to BIDS<a class="headerlink" href="#1-convert-to-bids" title="Permanent link">&para;</a></h3>
 <p>Reorganize the raw data files in your <code>BIDS/</code> folder in accordance with the <strong>BIDS metadata standard</strong> (<a href="https://bids-specification.readthedocs.io/en/stable/modality-specific-files/behavioral-experiments.html">behavioural data</a>; <a href="https://bids-specification.readthedocs.io/en/stable/modality-specific-files/electroencephalography.html">EEG data</a>; <a href="https://bids-specification.readthedocs.io/en/stable/modality-specific-files/magnetic-resonance-imaging-data.html">fMRI data</a>). </p>
@@ -2685,18 +2671,29 @@
 </ul>
 <h3 id="2-backup-to-mango">2. Backup to ManGO<a class="headerlink" href="#2-backup-to-mango" title="Permanent link">&para;</a></h3>
 <p>Push the data in your <code>sourcedata/</code> and <code>BIDS/</code> folders on Sharepoint to ManGO (central storage) <strong>on a regular basis</strong> during data collection (e.g., every week or after N participants). See <a href="/mango_active.md">this page</a> for more information on how to do that.</p>
-<div class="language-text highlight"><pre><span></span><code>!!! warning &quot;Important&quot;
-    Only pseudonymized data can be transferred to ManGO. Do not transfer your `confidential/` folder: this information should stay on Sharepoint only and should definitely not be in further back-ups or hard drives that you carry around. The `confidential/` folder might be deleted once it is no longer necessary to keep your pseudonymization key (to be discussed with your PI based on your ethics application).
-
-!!! Tip
-    You don&#39;t have to delete anything from Sharepoint after the transfer (back-up), but if you need more space you can consider deleting intermediate steps that can be reproduced based on the raw data and essential scripts.
-</code></pre></div>
-<h2 id="data-preprocessing">Data preprocessing<a class="headerlink" href="#data-preprocessing" title="Permanent link">&para;</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">Important</p>
+<p>Only pseudonymized data can be transferred to ManGO. Do not transfer your <code>confidential/</code> folder: this information should stay on Sharepoint only and should definitely not be in further back-ups or hard drives that you carry around. The <code>confidential/</code> folder might be deleted once it is no longer necessary to keep your pseudonymization key (to be discussed with your PI based on your ethics application).</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>You don't have to delete anything from Sharepoint after the transfer (back-up), but if you need more space you can consider deleting intermediate steps that can be reproduced based on the raw data and essential scripts.</p>
+</div>
+<h2 id="data-preprocessing-analysis">Data preprocessing &amp; analysis<a class="headerlink" href="#data-preprocessing-analysis" title="Permanent link">&para;</a></h2>
+<p>If the different steps below are followed in quick succession (or certain steps are done several times), repeated downloads/uploads make less sense and might be cumbersome. Therefore, they may be omitted, but researchers should keep in mind that ManGO is the main storage location for the research data and should thus be kept up to date.​</p>
+<p>Depending on the workflow, you may want to <a href="https://rdm-docs.icts.kuleuven.be/mango/clients/sftp_clients.html">mount the ManGO platform as a virtual folder</a> and read the data from that point rather than (re)downloading the data.​</p>
+<p>Throughout the process, you should make sure that any new or modified scripts are uploaded to the *<em>GitHub environment *</em>(see the page on <a href="../coding/version-control.html">coding practices</a>). </p>
 <h3 id="1-download-data">1. Download data<a class="headerlink" href="#1-download-data" title="Permanent link">&para;</a></h3>
 <p>Download the data from Sharepoint or ManGO to a local computer (e.g., your laptop, a more performant local computer or the <a href="../fmri/fmri-hpc.html">HPC infrastructure</a>).</p>
 <h3 id="2-preprocess-data">2. Preprocess data<a class="headerlink" href="#2-preprocess-data" title="Permanent link">&para;</a></h3>
 <p>Preprocess the data (see the guidelines for <a href="../fmri/analysis/fmri-setup-env.html">setting up your fMRI analysis environment</a>, <a href="../fmri/analysis/fmri-prepocessing-qa.html">preprocessing of fMRI data</a> and <a href="../eeg/eeg-analysis.html">preprocessing of EEG data</a>). </p>
-<h3 id="3-store-preprocessing-outputs">3. Store preprocessing outputs<a class="headerlink" href="#3-store-preprocessing-outputs" title="Permanent link">&para;</a></h3>
+<h3 id="3-perform-analysis">3. Perform analysis<a class="headerlink" href="#3-perform-analysis" title="Permanent link">&para;</a></h3>
+<ul>
+<li>For fMRI data, perform first-level (subject) analysis and second-level (group) analysis (via the <a href="../fmri/analysis/fmri-glm.md]">SPM GUI</a> or a <a href="../fmri/analysis/fmri-glm-script.html">batch script</a>). If applicable, define subject-level or group-level ROIs (see <a href="../fmri/analysis/fmri-rois.html">this page</a>), and perform multi-variate analysis (see <a href="../fmri/analysis/fmri-mvpa.html">this page</a>). </li>
+<li>For EEG data, you can find the analysis guidelines <a href="../eeg/eeg-analysis.html">here</a>. </li>
+<li>For purely behavioural data, process them through your programming script (R, Matlab, Python).</li>
+</ul>
+<h3 id="4-store-preprocessing-outputs">4. Store preprocessing outputs<a class="headerlink" href="#4-store-preprocessing-outputs" title="Permanent link">&para;</a></h3>
 <p>Organize and store all relevant preprocessing scripts and outputs in the appropriate <code>BIDS/</code> folders on your Sharepoint (preferably in open formats where feasible, with relevant metadata included).</p>
 <ul>
 <li>All outputs from preprocessing can be stored in a <code>derivatives/</code> folder in the main BIDS dataset root following <a href="https://bids-specification.readthedocs.io/en/stable/derivatives/introduction.html">BIDS conventions</a>.</li>
@@ -2705,25 +2702,6 @@
 <li>Any code used to generate the derivatives from the source data (e.g., the analysis scripts and pipelines), may be included in a <code>code/</code> subdirectory. Extra documentation (and relevant images) may be included in a <code>docs/</code> subdirectory. Logs from running the code or other commands may be stored in a <code>logs/</code> subdirectory.</li>
 </ul>
 <h3 id="4-upload-clean-up">4. Upload &amp; clean up<a class="headerlink" href="#4-upload-clean-up" title="Permanent link">&para;</a></h3>
-<p>Push the resulting data to ManGO using your preferred client and clear any data from your local device or the HPC environment. </p>
-<h2 id="data-analysis">Data analysis<a class="headerlink" href="#data-analysis" title="Permanent link">&para;</a></h2>
-<h3 id="1-download-data_1">1. Download data<a class="headerlink" href="#1-download-data_1" title="Permanent link">&para;</a></h3>
-<p>Download the data from Sharepoint or ManGO to a local computer (e.g., your laptop, a more performant local computer or the <a href="../fmri/fmri-hpc.html">HPC infrastructure</a>).</p>
-<h3 id="2-perform-analysis">2. Perform analysis<a class="headerlink" href="#2-perform-analysis" title="Permanent link">&para;</a></h3>
-<ul>
-<li>For <strong>fMRI data</strong>, perform first-level (subject) analysis and second-level (group) analysis (via the <a href="../fmri/analysis/fmri-glm.md]">SPM GUI</a> or a <a href="../fmri/analysis/fmri-glm-script.html">batch script</a>). If applicable, define subject-level or group-level ROIs (see <a href="../fmri/analysis/fmri-rois.html">this page</a>), and perform multi-variate analysis (see <a href="../fmri/analysis/fmri-mvpa.html">this page</a>). </li>
-<li>For <strong>EEG data</strong>, you can find the analysis guidelines <a href="../eeg/eeg-analysis.html">here</a>. </li>
-<li>For <strong>purely behavioural data</strong>, process them through your programming script (R, Matlab, Python).</li>
-</ul>
-<h3 id="3-store-analysis-outputs">3. Store analysis outputs<a class="headerlink" href="#3-store-analysis-outputs" title="Permanent link">&para;</a></h3>
-<p>Organize and store all relevant analysis scripts and outputs in the appropriate <code>BIDS/</code> folders on your Sharepoint (preferably in open formats where feasible, with relevant metadata included).</p>
-<ul>
-<li>All outputs from preprocessing can be stored in a <code>derivatives/</code> folder in the main BIDS dataset root following <a href="https://bids-specification.readthedocs.io/en/stable/derivatives/introduction.html">BIDS conventions</a>.</li>
-<li>Create one subfolder per pipeline (e.g., <code>fmriprep/</code>, <code>first-level/</code>, <code>group-level/</code>, <code>mvpa-rsa/</code>, <code>mvpa-searchlight/</code>).</li>
-<li>Each subfolder must include a <code>dataset_description.json</code> file describing how the data were generated (e.g., software, version, pipeline). Optionally, include a <code>README</code> file for additional context or explanations.</li>
-<li>Any code used to generate the derivatives from the source data (e.g., the analysis scripts and pipelines), may be included in a <code>code/</code> subdirectory. Extra documentation (and relevant images) may be included in a <code>docs/</code> subdirectory. Logs from running the code or other commands may be stored in a <code>logs/</code> subdirectory.</li>
-</ul>
-<h3 id="4-upload-clean-up_1">4. Upload &amp; clean up<a class="headerlink" href="#4-upload-clean-up_1" title="Permanent link">&para;</a></h3>
 <p>Push the resulting data to ManGO using your preferred client and clear any data from your local device or the HPC environment. </p>
 
 
